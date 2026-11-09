@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ell Pond Old-Growth Strata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* layout: fixed field-notes panel on the left, full-bleed map on the right; panel drops below the map on phones */
+:root {
+  --bg: #e9ecea;
+  --panel: #f8faf8;
+  --ink: #1b2320;
+  --muted: #56625d;
+  --line: #d2d9d4;
+  --accent: #2c6a4d;
+  --accent-ink: #ffffff;
+  --callout: #fff4d6;
+  --callout-line: #e2b23c;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --ptA: #e4412b;
+  --ptB: #1e6cf0;
+  --ptC: #1d1d1d;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101513; --panel: #171d1a; --ink: #e4ebe7; --muted: #97a59e; --line: #2b3430;
+    --accent: #74c49b; --accent-ink: #0c1310; --callout: #2a2414; --callout-line: #a8822a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101513; --panel: #171d1a; --ink: #e4ebe7; --muted: #97a59e; --line: #2b3430;
+  --accent: #74c49b; --accent-ink: #0c1310; --callout: #2a2414; --callout-line: #a8822a;
+  color-scheme: dark;
+}
+.leaflet-image-layer,.leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-pane>canvas,.leaflet-pane>svg,.leaflet-tile,.leaflet-tile-container,.leaflet-zoom-box{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile::selection{background:0 0}.leaflet-safari .leaflet-tile{image-rendering:-webkit-optimize-contrast}.leaflet-safari .leaflet-tile-container{width:1600px;height:1600px;-webkit-transform-origin:0 0}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer{max-width:none!important;max-height:none!important;width:auto;padding:0}.leaflet-container img.leaflet-tile{mix-blend-mode:plus-lighter}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container{-webkit-tap-highlight-color:transparent}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4)}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-overlay-pane svg{-moz-user-select:none}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.lvml{behavior:url(#default#VML);display:inline-block;position:absolute}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}svg.leaflet-zoom-animated{will-change:transform}.leaflet-zoom-anim .leaflet-zoom-animated{-webkit-transition:-webkit-transform .25s cubic-bezier(0,0,.25,1);-moz-transition:-moz-transform .25s cubic-bezier(0,0,.25,1);transition:transform .25s cubic-bezier(0,0,.25,1)}.leaflet-pan-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-tile{-webkit-transition:none;-moz-transition:none;transition:none}.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}.leaflet-crosshair,.leaflet-crosshair .leaflet-interactive{cursor:crosshair}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive,.leaflet-dragging .leaflet-marker-draggable{cursor:move;cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}.leaflet-image-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}.leaflet-image-layer.leaflet-interactive,.leaflet-marker-icon.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive,svg.leaflet-image-layer.leaflet-interactive path{pointer-events:visiblePainted;pointer-events:auto}.leaflet-container{background:#ddd;outline-offset:1px}.leaflet-container a{color:#0078a8}.leaflet-zoom-box{border:2px dotted #38f;background:rgba(255,255,255,.5)}.leaflet-container{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:12px;font-size:.75rem;line-height:1.5}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a,.leaflet-control-layers-toggle{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:focus,.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-bar a.leaflet-disabled{cursor:default;background-color:#f4f4f4;color:#bbb}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-control-layers{box-shadow:0 1px 5px rgba(0,0,0,.4);background:#fff;border-radius:5px}.leaflet-control-layers-toggle{background-image:url(images/layers.png);width:36px;height:36px}.leaflet-retina .leaflet-control-layers-toggle{background-image:url(images/layers-2x.png);background-size:26px 26px}.leaflet-touch .leaflet-control-layers-toggle{width:44px;height:44px}.leaflet-control-layers .leaflet-control-layers-list,.leaflet-control-layers-expanded .leaflet-control-layers-toggle{display:none}.leaflet-control-layers-expanded .leaflet-control-layers-list{display:block;position:relative}.leaflet-control-layers-expanded{padding:6px 10px 6px 6px;color:#333;background:#fff}.leaflet-control-layers-scrollbar{overflow-y:scroll;overflow-x:hidden;padding-right:5px}.leaflet-control-layers-selector{margin-top:2px;position:relative;top:1px}.leaflet-control-layers label{display:block;font-size:13px;font-size:1.08333em}.leaflet-control-layers-separator{height:0;border-top:1px solid #ddd;margin:5px -10px 5px -6px}.leaflet-default-icon-path{background-image:url(images/marker-icon.png)}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.8);margin:0}.leaflet-control-attribution,.leaflet-control-scale-line{padding:0 5px;color:#333;line-height:1.4}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:focus,.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-attribution-flag{display:inline!important;vertical-align:baseline!important;width:1em;height:.6669em}.leaflet-left .leaflet-control-scale{margin-left:5px}.leaflet-bottom .leaflet-control-scale{margin-bottom:5px}.leaflet-control-scale-line{border:2px solid #777;border-top:none;line-height:1.1;padding:2px 5px 1px;white-space:nowrap;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.8);text-shadow:1px 1px #fff}.leaflet-control-scale-line:not(:first-child){border-top:2px solid #777;border-bottom:none;margin-top:-2px}.leaflet-control-scale-line:not(:first-child):not(:last-child){border-bottom:2px solid #777}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution,.leaflet-touch .leaflet-control-layers{box-shadow:none}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-layers{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}.leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px}.leaflet-popup-content{margin:13px 24px 13px 20px;line-height:1.3;font-size:13px;font-size:1.08333em;min-height:1px}.leaflet-popup-content p{margin:17px 0;margin:1.3em 0}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;pointer-events:auto;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff;color:#333;box-shadow:0 3px 14px rgba(0,0,0,.4)}.leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;border:none;text-align:center;width:24px;height:24px;font:16px/24px Tahoma,Verdana,sans-serif;color:#757575;text-decoration:none;background:0 0}.leaflet-container a.leaflet-popup-close-button:focus,.leaflet-container a.leaflet-popup-close-button:hover{color:#585858}.leaflet-popup-scrolled{overflow:auto}.leaflet-oldie .leaflet-popup-content-wrapper{-ms-zoom:1}.leaflet-oldie .leaflet-popup-tip{width:24px;margin:0 auto}.leaflet-oldie .leaflet-control-layers,.leaflet-oldie .leaflet-control-zoom,.leaflet-oldie .leaflet-popup-content-wrapper,.leaflet-oldie .leaflet-popup-tip{border:1px solid #999}.leaflet-div-icon{background:#fff;border:1px solid #666}.leaflet-tooltip{position:absolute;padding:6px;background-color:#fff;border:1px solid #fff;border-radius:3px;color:#222;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.4)}.leaflet-tooltip.leaflet-interactive{cursor:pointer;pointer-events:auto}.leaflet-tooltip-bottom:before,.leaflet-tooltip-left:before,.leaflet-tooltip-right:before,.leaflet-tooltip-top:before{position:absolute;pointer-events:none;border:6px solid transparent;background:0 0;content:""}.leaflet-tooltip-bottom{margin-top:6px}.leaflet-tooltip-top{margin-top:-6px}.leaflet-tooltip-bottom:before,.leaflet-tooltip-top:before{left:50%;margin-left:-6px}.leaflet-tooltip-top:before{bottom:0;margin-bottom:-12px;border-top-color:#fff}.leaflet-tooltip-bottom:before{top:0;margin-top:-12px;margin-left:-6px;border-bottom-color:#fff}.leaflet-tooltip-left{margin-left:-6px}.leaflet-tooltip-right{margin-left:6px}.leaflet-tooltip-left:before,.leaflet-tooltip-right:before{top:50%;margin-top:-6px}.leaflet-tooltip-left:before{right:0;margin-right:-12px;border-left-color:#fff}.leaflet-tooltip-right:before{left:0;margin-left:-12px;border-right-color:#fff}@media print{.leaflet-control{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 14px; line-height: 1.45; }
+#app { display: grid; grid-template-columns: minmax(320px, 400px) 1fr; height: 100%; }
+#panel { background: var(--panel); border-right: 1px solid var(--line); overflow-y: auto; padding: 18px 20px 28px; display: flex; flex-direction: column; gap: 18px; }
+#mapwrap { position: relative; min-height: 0; }
+#map { position: absolute; inset: 0; background: var(--bg); }
+h1, h2 { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; margin: 0; }
+h1 { font-size: 30px; line-height: 1.05; }
+h2 { font-size: 19px; line-height: 1.15; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.sub { color: var(--muted); font-size: 12.5px; }
+header { display: flex; flex-direction: column; gap: 6px; }
+section { display: flex; flex-direction: column; gap: 10px; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0; }
+.stats div { border: 1px solid var(--line); border-radius: 6px; padding: 8px 9px; display: flex; flex-direction: column; gap: 2px; }
+.stats dt { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+.stats dd { margin: 0; font-family: var(--font-display); font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+.callout { background: var(--callout); border-left: 4px solid var(--callout-line); border-radius: 4px; padding: 12px 14px; }
+button { font: inherit; font-weight: 500; background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 5px; padding: 7px 12px; cursor: pointer; align-self: flex-start; }
+button.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 4px 9px; font-size: 12px; }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--callout-line); outline-offset: 2px; }
+fieldset { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px 10px; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+legend { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); padding: 0 4px; }
+label { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; font-size: 13px; }
+.full { flex-basis: 100%; }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.legend-grid { display: grid; gap: 3px 6px; align-items: center; font-size: 12px; }
+.sw { width: 22px; height: 14px; border-radius: 2px; border: 1px solid rgba(0,0,0,0.15); display: inline-block; }
+.ramp { height: 12px; border-radius: 2px; border: 1px solid rgba(0,0,0,0.15); }
+.ramp-labels { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.legend-note { font-size: 12px; color: var(--muted); }
+.ptkey { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; }
+.dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.35); }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+th { font-weight: 500; color: var(--muted); font-size: 11.5px; }
+td.num, th.num { text-align: right; }
+ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; max-width: 65ch; }
+.mono { font-family: var(--font-mono); font-size: 12px; }
+footer { font-size: 11.5px; color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+footer a, #panel a { color: var(--accent); }
+#readout { position: absolute; right: 10px; bottom: 26px; z-index: 800; background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 5px; padding: 4px 8px; font-family: var(--font-mono); font-size: 11.5px; pointer-events: none; }
+.pix { image-rendering: pixelated; }
+.leaflet-container { font-family: var(--font-body); }
+.leaflet-popup-content { margin: 10px 12px; font-size: 12.5px; line-height: 1.35; min-width: 240px; }
+.pop h3 { font-family: var(--font-display); font-size: 18px; margin: 0 0 4px; font-weight: 600; }
+.pop table { font-size: 12px; }
+.pop td { padding: 2px 4px; }
+.pop .flags { margin-top: 6px; font-size: 12px; color: #8a3b00; }
+.leaflet-tooltip.ptlabel { font-family: var(--font-mono); font-size: 11px; padding: 1px 4px; }
+@media (max-width: 760px) {
+  #app { grid-template-columns: 1fr; grid-template-rows: 58% 42%; }
+  #mapwrap { grid-row: 1; }
+  #panel { grid-row: 2; border-right: 0; border-top: 1px solid var(--line); padding: 14px 16px 24px; }
+  .stats { grid-template-columns: 1fr 1fr 1fr; }
+  h1 { font-size: 25px; }
+}
+@media (prefers-reduced-motion: reduce) { .leaflet-fade-anim .leaflet-popup, .leaflet-zoom-anim .leaflet-zoom-animated { transition: none !important; } }
+</style>
+</head>
+<body>
+<div id="app">
+<aside id="panel" aria-label="Map controls and notes">
+  <header>
+    <p class="eyebrow">Old Growth in the East, rev. ed., p. 63 &middot; Hopkinton, RI</p>
+    <h1>Ell Pond old-growth sampling strata</h1>
+    <p class="sub">Long &amp; Ell Ponds block, from the RI&ndash;CT line east past Long Pond. 2022 RI statewide lidar (USGS 3DEP, about 25 returns/m&sup2;) with a 0.5&nbsp;m bare-earth surface built from its ground returns, 2024 RIGIS leaf-off photo, RIGIS conservation lands and stone walls.</p>
+  </header>
+
+  <section aria-labelledby="h-p63">
+    <h2 id="h-p63">The p.&nbsp;63 area</h2>
+    <p>Davis lists Ell Pond, Rhode Island&rsquo;s only National Natural Landmark, as a 10&ndash;15 acre rocky ravine sheltering large eastern hemlock (locally &ldquo;the Cathedral&rdquo;) and a bog pond ringed by a floating mat, with adelgid already killing many of the hemlocks. On the ground that is the granite trough carrying Ell Pond&rsquo;s outlet to Long Pond, where the Narragansett Trail drops between two rock walls to the footbridge.</p>
+    <dl class="stats">
+      <div><dt>Ravine core</dt><dd>3.2&nbsp;ac</dd><span>Cleft floor and lower walls, &ge;&nbsp;8&nbsp;m below the walls on both sides</span></div>
+      <div><dt>Rim to rim</dt><dd>19.8&nbsp;ac</dd><span>land, plus 4.9&nbsp;ac of pond; generous on the swamp side</span></div>
+      <div><dt>Evergreen canopy</dt><dd>8.0&nbsp;ac</dd><span>hemlock and cedar inside the rim, from leaf-off lidar</span></div>
+    </dl>
+    <button id="zoomP63" type="button">Zoom to the ravine</button>
+  </section>
+
+  <section class="callout" aria-labelledby="h-find">
+    <h2 id="h-find">The documented old growth scores low on lidar structure</h2>
+    <p>Inside the rim, canopy tops sit near 16&nbsp;m and the median structure score is the 15th percentile of the block&rsquo;s forest (18th within its own landform; 25th in the ravine core). None of it lands in a high-structure stratum. The big hemlock crowns are gone and what is left is short cedar and hemlock on ledge and swamp, so a tall-and-complex canopy index walks past it. That is why all three designs put points in every stratum instead of only the high tier.</p>
+    <p>Model C adds land-use history and reads the site differently: all of the rim&rsquo;s upland (33% of the rim) falls in &ldquo;no field evidence&rdquo; &mdash; no stone wall within 120&nbsp;m and pitted ground &mdash; while 94% of the rim stays in the low structure tier. Field plots in LO-UPN and LO-RGH are the test of whether land use beats canopy height.</p>
+  </section>
+
+  <section aria-labelledby="h-layers">
+    <h2 id="h-layers">Layers</h2>
+    <fieldset>
+      <legend>Base</legend>
+      <label><input type="radio" name="base" id="base-photo" value="photo" checked> 2024 leaf-off photo</label>
+      <label><input type="radio" name="base" id="base-hill" value="hill"> Lidar hillshade</label>
+      <label><input type="radio" name="base" id="base-micro" value="micro"> Micro-relief, 0.5&nbsp;m (walls, pits)</label>
+    </fieldset>
+    <fieldset>
+      <legend>Overlay</legend>
+      <label><input type="radio" name="ov" id="ov-C" value="C" checked> Model C strata</label>
+      <label><input type="radio" name="ov" id="ov-A" value="A"> Model A strata</label>
+      <label><input type="radio" name="ov" id="ov-B" value="B"> Model B strata</label>
+      <label><input type="radio" name="ov" id="ov-lu" value="lu"> Land-use history</label>
+      <label><input type="radio" name="ov" id="ov-land" value="land"> Landform</label>
+      <label><input type="radio" name="ov" id="ov-ct" value="ct"> Canopy type</label>
+      <label><input type="radio" name="ov" id="ov-losi" value="losi"> Structure index</label>
+      <label><input type="radio" name="ov" id="ov-chm" value="chm"> Canopy height</label>
+      <label><input type="radio" name="ov" id="ov-enc" value="enc"> Ravine enclosure</label>
+      <label><input type="radio" name="ov" id="ov-none" value="none"> None</label>
+      <label class="full" for="opacity">Overlay opacity <span id="opv" class="mono">60%</span></label>
+      <input class="full" type="range" id="opacity" min="0" max="100" value="60">
+    </fieldset>
+    <fieldset>
+      <legend>Features</legend>
+      <label><input type="checkbox" id="f-p63" checked> p.&nbsp;63 ravine</label>
+      <label><input type="checkbox" id="f-ptA" checked> Model A points</label>
+      <label><input type="checkbox" id="f-ptB" checked> Model B points</label>
+      <label><input type="checkbox" id="f-ptC" checked> Model C points</label>
+      <label><input type="checkbox" id="f-bk"> Backup points</label>
+      <label><input type="checkbox" id="f-cons" checked> Conservation land</label>
+      <label><input type="checkbox" id="f-trails" checked> Trails</label>
+      <label><input type="checkbox" id="f-walls"> RIGIS stone walls</label>
+      <label><input type="checkbox" id="f-w05" checked> Wall candidates (0.5&nbsp;m)</label>
+      <label><input type="checkbox" id="f-tip"> Tip-up pairs (0.5&nbsp;m)</label>
+      <label><input type="checkbox" id="f-hearth"> Hearth-like platforms</label>
+      <label><input type="checkbox" id="f-roads" checked> Roads</label>
+    </fieldset>
+  </section>
+
+  <section aria-labelledby="h-legend">
+    <h2 id="h-legend">Legend</h2>
+    <div id="legend"></div>
+    <div class="ptkey">
+      <span><span class="dot" style="background:var(--ptA)"></span> Model A primary</span>
+      <span><span class="dot" style="background:var(--ptB)"></span> Model B primary</span>
+      <span><span class="dot" style="background:var(--ptC)"></span> Model C primary</span>
+      <span><span class="dot" style="background:#fff;border-color:var(--ptA)"></span> backup (ring: A red, B blue, C black)</span>
+      <span><span class="sw" style="height:4px;width:22px;background:#19d119;border:0"></span> wall candidate (thick = high confidence)</span>
+      <span><span class="dot" style="width:7px;height:7px;background:#08306b;border-width:1px"></span><span class="dot" style="width:7px;height:7px;background:#a50f15;border-width:1px"></span> tip-up pit / mound</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-table">
+    <h2 id="h-table">Strata and allocation</h2>
+    <div id="stratatable"></div>
+  </section>
+
+  <section aria-labelledby="h-method">
+    <h2 id="h-method">How the strata were built</h2>
+    <ul>
+      <li>10&nbsp;m cells; forest is any cell whose lidar 95th-percentile height is at least 5&nbsp;m (1,124&nbsp;ha of the block).</li>
+      <li><b>Structure index</b>, all three models: mean percentile rank of 30&nbsp;m top height, density of crowns taller than the block&rsquo;s 90th-percentile tree (23.8&nbsp;m), canopy-height variability, and vertical spread of returns. Each is ranked within canopy type, which cancels most of the leaf-off bias between bare oaks and opaque conifers. Tiers: HI &ge; 85th percentile, MO 50&ndash;85, LO below 50.</li>
+      <li><b>Model B, lidar only:</b> tier ranked across the whole forest &times; canopy type. Evergreen means leaf-off upper-canopy cover of at least 0.78, a cut that traces the dark conifer patches on the 2024 photo.</li>
+      <li><b>Model A, lidar + landform:</b> tier re-ranked within each landform, so a ledge stand competes only with ledge stands, &times; landform. Ledge/steep: mean slope &ge; 15&deg; or cliff faces. Ravine/cove/cool slope: enclosure &ge; 4&nbsp;m, a hollow at the 50&nbsp;m scale, or a north-facing slope. Swamp/bog flat: slope &le; 3&deg; and at least 1&nbsp;m below the 150&nbsp;m neighborhood. Everything else is exposed upland.</li>
+      <li><b>Model C, lidar + landform + land-use history:</b> ledge and ravine merged as rough ground (RGH), swamp flats kept (WET), and upland split by field evidence. Upland with a stone wall within 60&nbsp;m, or within 120&nbsp;m on ground smoother than usual for its slope, is UPF (421&nbsp;ha); the rest is UPN (455&nbsp;ha). Walls are RIGIS plus 25 high-confidence candidates; pit density is the 0.5&nbsp;m pit count within 50&nbsp;m, ranked within 1&deg; slope classes. Tier re-ranked within each group, &times; group.</li>
+      <li><b>0.5&nbsp;m surface:</b> the 88.6 million lidar ground returns averaged per 0.5&nbsp;m cell, gaps filled from returns within 4&nbsp;m; it sits within 1.5&nbsp;cm (RMSE) of the USGS 1&nbsp;m DEM. Micro-relief is that surface minus a 6&nbsp;m Gaussian. Wall candidates come from a 20&nbsp;m line filter that needs all four 5&nbsp;m pieces of a line raised above both sides, so a lone boulder can&rsquo;t trigger it; it recovers 22% of mapped walls in forest. Tip-up pairs are a pit and a mound, each 0.25&nbsp;m or more, 1&ndash;4.5&nbsp;m apart. The hearth search tested 760 level platforms set into slopes; 4 passed and none is convincing.</li>
+      <li><b>Frame:</b> forest on RIDEM, TNC, Audubon and Hopkinton Land Trust land (612&nbsp;ha), at least 20&nbsp;m from roads and 30&nbsp;m from the Ell and Long Pond shores, with the whole 30&nbsp;m block around each point in one stratum.</li>
+      <li><b>Allocation:</b> 40 primaries per model, in proportion to &radic;area &times; tier weight (HI 2, MO 1.25, LO 1), at least 3 per stratum, points at least 75&nbsp;m apart, and up to 3 ordered backups per stratum. Random seed 2026.</li>
+      <li>The block stops at the RI&ndash;CT line, 0.8&nbsp;km west of Ell Pond, because the 2022 RI lidar does. The same scripts run on CT&rsquo;s 2016 statewide lidar.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>Sources: <a href="https://www.usgs.gov/3d-elevation-program">USGS 3DEP</a> RI_Statewide_D22 lidar; <a href="https://www.rigis.org/">RIGIS</a> imagery, conservation lands, stone walls, ponds, roads; trails and pond outlines &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors; site description from Davis, <i>Old Growth in the East</i>, rev. ed., p.&nbsp;63, and <a href="https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/ell-pond-preserve/">TNC&rsquo;s Ell Pond Preserve</a> page.</span>
+    <span>Field note: TNC asks visitors to stay off the Ell Pond and Long Pond shorelines. Off-trail plots on the TNC, Audubon and RIDEM parcels need the owners&rsquo; OK.</span>
+  </footer>
+</aside>
+<div id="mapwrap"><div id="map" role="region" aria-label="Map of strata and sample points"></div><div id="readout" aria-live="off">move over the map</div></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const META = {"bounds":[[41.486692449092104,-71.79673463418358],[41.51637301395844,-71.74740757554167]],"strata":[{"model":"A","stratum":"LO-LED","label":"low x ledge / cliff / steep rock","area_ha":27.8,"eligible_ha":5.3,"n_primary":3},{"model":"A","stratum":"LO-RAV","label":"low x ravine, cleft, cove or cool slope","area_ha":36.4,"eligible_ha":4.6,"n_primary":3},{"model":"A","stratum":"LO-WET","label":"low x swamp / bog flat","area_ha":62.9,"eligible_ha":17.3,"n_primary":3},{"model":"A","stratum":"LO-UPL","label":"low x exposed upland","area_ha":461.8,"eligible_ha":146.4,"n_primary":4},{"model":"A","stratum":"MO-LED","label":"moderate x ledge / cliff / steep rock","area_ha":11.4,"eligible_ha":0.8,"n_primary":3},{"model":"A","stratum":"MO-RAV","label":"moderate x ravine, cleft, cove or cool slope","area_ha":28.2,"eligible_ha":5.0,"n_primary":3},{"model":"A","stratum":"MO-WET","label":"moderate x swamp / bog flat","area_ha":34.3,"eligible_ha":6.0,"n_primary":3},{"model":"A","stratum":"MO-UPL","label":"moderate x exposed upland","area_ha":308.0,"eligible_ha":79.7,"n_primary":5},{"model":"A","stratum":"HI-LED","label":"high old-growth structure x ledge / cliff / steep rock","area_ha":4.8,"eligible_ha":0.4,"n_primary":3},{"model":"A","stratum":"HI-RAV","label":"high old-growth structure x ravine, cleft, cove or cool slope","area_ha":10.5,"eligible_ha":1.8,"n_primary":3},{"model":"A","stratum":"HI-WET","label":"high old-growth structure x swamp / bog flat","area_ha":10.1,"eligible_ha":1.5,"n_primary":3},{"model":"A","stratum":"HI-UPL","label":"high old-growth structure x exposed upland","area_ha":113.8,"eligible_ha":30.5,"n_primary":4},{"model":"B","stratum":"LO-DEC","label":"low x deciduous-dominant canopy (leaf-off)","area_ha":561.3,"eligible_ha":210.3,"n_primary":10},{"model":"B","stratum":"LO-EVG","label":"low x evergreen-dominant canopy (hemlock / pine / cedar)","area_ha":14.2,"eligible_ha":5.6,"n_primary":3},{"model":"B","stratum":"MO-DEC","label":"moderate x deciduous-dominant canopy (leaf-off)","area_ha":380.8,"eligible_ha":109.6,"n_primary":11},{"model":"B","stratum":"MO-EVG","label":"moderate x evergreen-dominant canopy (hemlock / pine / cedar)","area_ha":6.9,"eligible_ha":0.7,"n_primary":3},{"model":"B","stratum":"HI-DEC","label":"high old-growth structure x deciduous-dominant canopy (leaf-off)","area_ha":145.6,"eligible_ha":47.1,"n_primary":10},{"model":"B","stratum":"HI-EVG","label":"high old-growth structure x evergreen-dominant canopy (hemlock / pine / cedar)","area_ha":1.9,"eligible_ha":0.2,"n_primary":3}],"run":{"cfg":{"forest_p95":5.0,"evergreen_ucc":0.78,"evergreen_min_p95":8.0,"tier_hi":85,"tier_mod":50,"ledge_slope":15.0,"ledge_p90":35.0,"ledge_relief":3.0,"ravine_enc":4.0,"ravine_tpi50":-1.5,"cool_northness":0.25,"cool_slope":8.0,"wet_slope":3.0,"wet_tpi150":-1.0,"road_buffer":20.0,"shore_buffer":30.0,"min_spacing":75.0,"min_per_stratum":3,"backups_per_stratum":3,"tier_weight":{"HI":2.0,"MO":1.25,"LO":1.0},"mmu_cells":20},"n_per_model":40,"seed":2026,"benchmark":{"p63 rim-to-rim (land)":{"forest_cells":786,"losi_pct_median":14.9,"losi_pct_in_landform_median":18.4,"B_share_HI":0.0,"B_share_MO":0.06,"A_share_HI":0.0,"A_share_MO":0.09,"landform_mix":{"LED":0.24,"RAV":0.04,"WET":0.36,"UPL":0.33},"evergreen_share":0.37,"top_h_median":16.1},"p63 deep core":{"forest_cells":126,"losi_pct_median":25.0,"losi_pct_in_landform_median":30.0,"B_share_HI":0.0,"B_share_MO":0.0,"A_share_HI":0.0,"A_share_MO":0.02,"landform_mix":{"LED":0.48,"RAV":0.17,"WET":0.33,"UPL":0.0},"evergreen_share":0.1,"top_h_median":15.9},"p63 evergreen canopy":{"forest_cells":320,"losi_pct_median":15.2,"losi_pct_in_landform_median":17.3,"B_share_HI":0.0,"B_share_MO":0.04,"A_share_HI":0.0,"A_share_MO":0.08,"landform_mix":{"LED":0.16,"RAV":0.02,"WET":0.45,"UPL":0.36},"evergreen_share":0.75,"top_h_median":16.5}},"forest_ha":1124.0,"frame_ha":611.7,"landform_share":{"LED":0.042,"RAV":0.071,"WET":0.099,"UPL":0.779},"evergreen_share":0.022},"colors":{"A":{"31":[128,0,128],"32":[0,109,176],"33":[0,150,120],"34":[196,140,40],"21":[176,96,176],"22":[96,164,206],"23":[96,189,171],"24":[218,183,121],"11":[214,173,214],"12":[173,208,229],"13":[173,221,211],"14":[236,218,186]},"B":{"31":[20,90,50],"30":[150,90,30],"21":[109,152,127],"20":[189,152,115],"11":[179,202,189],"10":[221,202,183]},"C":{"31":[100,40,140],"32":[0,140,110],"33":[190,130,40],"34":[0,95,170],"21":[158,121,183],"22":[96,183,165],"23":[214,177,121],"24":[96,155,202],"11":[205,186,218],"12":[173,218,208],"13":[234,215,186],"14":[173,203,227]}},"landform_colors":{"1":[128,0,128],"2":[0,109,176],"3":[0,150,120],"4":[214,178,102]},"strataC":[{"model":"C","stratum":"HI-RGH","area_ha":17.0,"eligible_ha":3.6,"n_primary":3},{"model":"C","stratum":"HI-WET","area_ha":10.5,"eligible_ha":1.3,"n_primary":3},{"model":"C","stratum":"HI-UPF","area_ha":54.1,"eligible_ha":9.2,"n_primary":3},{"model":"C","stratum":"HI-UPN","area_ha":57.9,"eligible_ha":16.1,"n_primary":4},{"model":"C","stratum":"MO-RGH","area_ha":41.7,"eligible_ha":7.8,"n_primary":3},{"model":"C","stratum":"MO-WET","area_ha":33.5,"eligible_ha":5.5,"n_primary":3},{"model":"C","stratum":"MO-UPF","area_ha":147.2,"eligible_ha":33.4,"n_primary":4},{"model":"C","stratum":"MO-UPN","area_ha":157.7,"eligible_ha":38.3,"n_primary":4},{"model":"C","stratum":"LO-RGH","area_ha":64.2,"eligible_ha":13.9,"n_primary":3},{"model":"C","stratum":"LO-WET","area_ha":64.3,"eligible_ha":18.0,"n_primary":3},{"model":"C","stratum":"LO-UPF","area_ha":223.2,"eligible_ha":64.5,"n_primary":3},{"model":"C","stratum":"LO-UPN","area_ha":239.3,"eligible_ha":70.1,"n_primary":4}],"landuse_colors":{"1":[100,40,140],"2":[0,140,110],"3":[190,130,40],"4":[0,95,170]},"runC":{"UPF_ha":420.9,"UPN_ha":454.5,"group_ha":{"RGH":127.0,"WET":111.2,"UPF":420.9,"UPN":454.5},"p63":{"rim":{"cells":786,"groups":{"RGH":0.28,"WET":0.36,"UPF":0.0,"UPN":0.33},"tiers":{"LO":0.94,"MO":0.06,"HI":0.0},"losi_in_group_med":17.2},"core":{"cells":126,"groups":{"RGH":0.65,"WET":0.33,"UPF":0.0,"UPN":0.0},"tiers":{"LO":1.0,"MO":0.0,"HI":0.0},"losi_in_group_med":22.7}},"A_upland_split":{"HI-UPL":{"ha":113.8,"share_UPN":0.376,"share_UPF":0.608},"MO-UPL":{"ha":308.0,"share_UPN":0.432,"share_UPF":0.548},"LO-UPL":{"ha":461.8,"share_UPN":0.593,"share_UPF":0.391}},"near_AB":10,"walls":{"lines_ge20m":569,"on_mapped":192,"on_mapped_km":7.0,"dropped":{"curved (dropped)":98,"shore/stream (dropped)":34,"lidar edge (dropped)":33},"candidates":212,"candidates_km":6.3,"by_conf":{"high":{"n":25,"km":1.15},"low":{"n":175,"km":4.53},"medium":{"n":12,"km":0.58}}},"compare":{"footprint_ha":899.7,"pits_1m_ha":16.5,"pits_05_ha":25.7,"mounds_1m_ha":15.7,"mounds_05_ha":24.9,"pairs_05_ha":0.77,"pairs_05_n":697},"hearths":{"raw":760,"passed":4}}};
+const B = META.bounds;
+const map = L.map('map', { zoomSnap: 0.25, minZoom: 12, maxZoom: 19, maxBounds: L.latLngBounds(B).pad(0.6) });
+[['base', 200], ['analysis', 250], ['vec', 420], ['pts', 650]].forEach(([n, z]) => { map.createPane(n); map.getPane(n).style.zIndex = z; });
+map.fitBounds(B);
+L.control.scale({ metric: true, imperial: true }).addTo(map);
+map.attributionControl.setPrefix(false);
+map.attributionControl.addAttribution('Lidar USGS 3DEP &middot; imagery, land, walls RIGIS &middot; trails &copy; OpenStreetMap contributors');
+
+const bases = {
+  photo: L.imageOverlay('img/ortho2024.jpg', B, { pane: 'base' }),
+  hill: L.imageOverlay('img/hillshade.jpg', B, { pane: 'base' }),
+  micro: L.imageOverlay('img/microrelief05.jpg', B, { pane: 'base' })
+};
+const ovs = {
+  C: L.imageOverlay('img/strataC.png', B, { pane: 'analysis', className: 'pix' }),
+  lu: L.imageOverlay('img/landuse.png', B, { pane: 'analysis', className: 'pix' }),
+  A: L.imageOverlay('img/strataA.png', B, { pane: 'analysis', className: 'pix' }),
+  B: L.imageOverlay('img/strataB.png', B, { pane: 'analysis', className: 'pix' }),
+  land: L.imageOverlay('img/landform.png', B, { pane: 'analysis', className: 'pix' }),
+  ct: L.imageOverlay('img/canopytype.png', B, { pane: 'analysis', className: 'pix' }),
+  losi: L.imageOverlay('img/losi.png', B, { pane: 'analysis', className: 'pix' }),
+  chm: L.imageOverlay('img/chm.png', B, { pane: 'analysis' }),
+  enc: L.imageOverlay('img/enclosure.png', B, { pane: 'analysis' })
+};
+let curBase = 'photo', curOv = 'C';
+bases.photo.addTo(map);
+function setOpacity() { const v = +document.getElementById('opacity').value / 100; document.getElementById('opv').textContent = Math.round(v * 100) + '%'; Object.values(ovs).forEach(o => o.setOpacity(v)); }
+ovs.C.addTo(map); setOpacity();
+document.querySelectorAll('input[name=base]').forEach(r => r.addEventListener('change', e => { map.removeLayer(bases[curBase]); curBase = e.target.value; bases[curBase].addTo(map); }));
+document.querySelectorAll('input[name=ov]').forEach(r => r.addEventListener('change', e => {
+  if (curOv !== 'none') map.removeLayer(ovs[curOv]);
+  curOv = e.target.value;
+  if (curOv !== 'none') { ovs[curOv].addTo(map); setOpacity(); }
+  renderLegend(); renderTable();
+}));
+document.getElementById('opacity').addEventListener('input', setOpacity);
+
+// ---------- legend + strata table
+const hex = c => '#' + c.slice(0, 3).map(v => v.toString(16).padStart(2, '0')).join('');
+const TIERS = [['3', 'HI'], ['2', 'MO'], ['1', 'LO']];
+const LANDS = [['1', 'Ledge / steep'], ['2', 'Ravine / cove / cool'], ['3', 'Swamp / bog flat'], ['4', 'Exposed upland']];
+const CTS = [['1', 'Evergreen'], ['0', 'Deciduous']];
+const GRPS = [['1', 'Rough'], ['2', 'Swamp'], ['3', 'Upland, field'], ['4', 'Upland, no field']];
+const GRP_TXT = { '1': 'Rough ground: ledge, ravine, cleft or cool slope (RGH)', '2': 'Swamp / bog flat (WET)', '3': 'Upland with field evidence: wall within 60 m, or within 120 m on smooth ground (UPF)', '4': 'Upland without field evidence: no wall within 120 m, or pitted ground 60&ndash;120 m from one (UPN)' };
+function gridLegend(cols, colors, note) {
+  let h = '<div class="legend-grid" style="grid-template-columns:28px repeat(' + cols.length + ', 1fr)"><span></span>' + cols.map(c => '<span class="legend-note">' + c[1] + '</span>').join('');
+  TIERS.forEach(([t, tn]) => { h += '<span class="mono">' + tn + '</span>' + cols.map(c => '<span class="sw" title="' + tn + ' x ' + c[1] + '" style="background:' + hex(colors[t + c[0]]) + '"></span>').join(''); });
+  return h + '</div><p class="legend-note">' + note + '</p>';
+}
+function ramp(css, lo, hi, note) { return '<div class="ramp" style="background:linear-gradient(90deg,' + css + ')"></div><div class="ramp-labels"><span>' + lo + '</span><span>' + hi + '</span></div><p class="legend-note">' + note + '</p>'; }
+const MAGMA = '#000004,#3b0f70,#8c2981,#de4968,#fe9f6d,#fcfdbf';
+const VIRIDIS = '#440154,#3b528b,#21918c,#5ec962,#fde725';
+const INFERNO_R = '#fcffa4,#f98e09,#bc3754,#57106e,#000004';
+function renderLegend() {
+  const el = document.getElementById('legend');
+  const L_ = {
+    C: () => gridLegend(GRPS, META.colors.C, 'Rows: structure tier ranked within each group. Columns: rough ground, swamp flat, and upland with or without field evidence (stone walls, smooth ground).'),
+    lu: () => '<div class="legend-grid" style="grid-template-columns:28px 1fr">' + GRPS.map(([k]) => '<span class="sw" style="background:' + hex(META.landuse_colors[k]) + '"></span><span>' + GRP_TXT[k] + '</span>').join('') + '</div><p class="legend-note">Model C&rsquo;s four groups. Missing walls on the state map read as no field evidence, so UPN means no evidence, not proof the ground was never plowed.</p>',
+    A: () => gridLegend(LANDS, META.colors.A, 'Rows: structure tier ranked within each landform. Columns: landform from the 1 m lidar DEM.'),
+    B: () => gridLegend(CTS, META.colors.B, 'Rows: structure tier ranked across the whole forest. Columns: canopy type from leaf-off lidar.'),
+    land: () => '<div class="legend-grid" style="grid-template-columns:28px 1fr">' + LANDS.map(([k, n]) => '<span class="sw" style="background:' + hex(META.landform_colors[k]) + '"></span><span>' + n + '</span>').join('') + '</div>',
+    ct: () => '<div class="legend-grid" style="grid-template-columns:28px 1fr"><span class="sw" style="background:#185e38"></span><span>Evergreen-dominant (hemlock, pine, cedar)</span><span class="sw" style="background:#cdaa78"></span><span>Deciduous-dominant</span></div>',
+    losi: () => ramp(MAGMA, '0', '100th percentile', 'Lidar old-growth structure index, pooled across the block&rsquo;s forest.'),
+    chm: () => ramp(VIRIDIS, '2 m', '32 m', 'Canopy height above ground, 1 m, with stray spikes and two towers near Gun Club Path removed.'),
+    enc: () => ramp(INFERNO_R, '3 m', '20 m+', 'How far a cell sits below the highest ground on two opposite sides within 80 m. Ravines and clefts light up.'),
+    none: () => '<p class="legend-note">No overlay.</p>'
+  };
+  el.innerHTML = L_[curOv]();
+}
+function renderTable() {
+  const m = curOv === 'B' ? 'B' : (curOv === 'A' || curOv === 'land' || curOv === 'ct') ? 'A' : 'C';
+  const rows = m === 'C' ? META.strataC : META.strata.filter(r => r.model === m);
+  const col = META.colors[m];
+  const XN = { A: { LED: '1', RAV: '2', WET: '3', UPL: '4' }, B: { EVG: '1', DEC: '0' }, C: { RGH: '1', WET: '2', UPF: '3', UPN: '4' } }[m];
+  const code = s => { const [t, x] = s.split('-'); return { HI: '3', MO: '2', LO: '1' }[t] + XN[x]; };
+  const what = { A: ' (lidar + landform)', B: ' (lidar only)', C: ' (lidar + landform + land-use history)' }[m];
+  let h = '<p class="legend-note">Model ' + m + what + '. Switch the overlay to see the other designs.</p><table><thead><tr><th>Stratum</th><th class="num">Area ha</th><th class="num">In frame ha</th><th class="num">Points</th></tr></thead><tbody>';
+  rows.forEach(r => { h += '<tr><td><span class="sw" style="width:12px;height:10px;vertical-align:-1px;background:' + hex(col[code(r.stratum)]) + '"></span> <span class="mono">' + r.stratum + '</span></td><td class="num">' + r.area_ha.toFixed(1) + '</td><td class="num">' + r.eligible_ha.toFixed(1) + '</td><td class="num">' + r.n_primary + '</td></tr>'; });
+  document.getElementById('stratatable').innerHTML = h + '</tbody></table>';
+}
+renderLegend(); renderTable();
+
+// ---------- UTM 19N readout
+function toUTM(lat, lon) {
+  const a = 6378137, f = 1 / 298.257222101, k0 = 0.9996, zone = 19, lon0 = (zone - 1) * 6 - 180 + 3;
+  const e2 = f * (2 - f), ep2 = e2 / (1 - e2), φ = lat * Math.PI / 180, λ = (lon - lon0) * Math.PI / 180;
+  const N = a / Math.sqrt(1 - e2 * Math.sin(φ) ** 2), T = Math.tan(φ) ** 2, C = ep2 * Math.cos(φ) ** 2, A = Math.cos(φ) * λ;
+  const M = a * ((1 - e2 / 4 - 3 * e2 ** 2 / 64 - 5 * e2 ** 3 / 256) * φ - (3 * e2 / 8 + 3 * e2 ** 2 / 32 + 45 * e2 ** 3 / 1024) * Math.sin(2 * φ) + (15 * e2 ** 2 / 256 + 45 * e2 ** 3 / 1024) * Math.sin(4 * φ) - (35 * e2 ** 3 / 3072) * Math.sin(6 * φ));
+  const E = k0 * N * (A + (1 - T + C) * A ** 3 / 6 + (5 - 18 * T + T * T + 72 * C - 58 * ep2) * A ** 5 / 120) + 500000;
+  const Nn = k0 * (M + N * Math.tan(φ) * (A * A / 2 + (5 - T + 9 * C + 4 * C * C) * A ** 4 / 24 + (61 - 58 * T + T * T + 600 * C - 330 * ep2) * A ** 6 / 720));
+  return [E, Nn];
+}
+const ro = document.getElementById('readout');
+map.on('mousemove', e => { const [E, N] = toUTM(e.latlng.lat, e.latlng.lng); ro.textContent = e.latlng.lat.toFixed(5) + ', ' + e.latlng.lng.toFixed(5) + '  |  UTM 19N ' + E.toFixed(0) + ' E ' + N.toFixed(0) + ' N'; });
+
+// ---------- vectors
+const layers = {};
+const getJSON = p => fetch(p).then(r => { if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); });
+function bindToggle(id, key) { const cb = document.getElementById(id); const f = () => { if (!layers[key]) return; cb.checked ? layers[key].addTo(map) : map.removeLayer(layers[key]); }; cb.addEventListener('change', f); f(); }
+getJSON('data/water.json').then(g => { layers.water = L.geoJSON(g, { pane: 'vec', style: { color: '#3d7fb0', weight: 0.8, fillColor: '#8fbcdc', fillOpacity: 0.55 }, interactive: false }).addTo(map); });
+getJSON('data/conservation.json').then(g => { layers.cons = L.geoJSON(g, { pane: 'vec', style: { color: '#111', weight: 1.1, dashArray: '2 4', fill: false }, onEachFeature: (f, l) => l.bindTooltip(esc(f.properties.owner) + ' &middot; ' + esc(f.properties.unit) + ' &middot; ' + f.properties.acres + ' ac &middot; public access ' + esc(f.properties.access), { sticky: true }) }); bindToggle('f-cons', 'cons'); });
+getJSON('data/roads.json').then(g => { layers.roads = L.geoJSON(g, { pane: 'vec', style: { color: '#f4f1ea', weight: 3.2, opacity: 0.95 }, onEachFeature: (f, l) => f.properties.name && l.bindTooltip(esc(f.properties.name), { sticky: true }) }); bindToggle('f-roads', 'roads'); });
+getJSON('data/trails.json').then(g => { layers.trails = L.geoJSON(g, { pane: 'vec', style: { color: '#b3261e', weight: 1.8, dashArray: '5 3' }, onEachFeature: (f, l) => f.properties.name && l.bindTooltip(esc(f.properties.name), { sticky: true }) }); bindToggle('f-trails', 'trails'); });
+getJSON('data/stonewalls.json').then(g => { layers.walls = L.geoJSON(g, { pane: 'vec', style: { color: '#ffd84d', weight: 1.4, opacity: 0.95 }, interactive: false }); bindToggle('f-walls', 'walls'); });
+getJSON('data/stateline.json').then(g => { L.geoJSON(g, { pane: 'vec', style: { color: '#000', weight: 2, dashArray: '10 5 2 5' }, interactive: false }).bindTooltip('RI | CT', { permanent: true, direction: 'right', className: 'ptlabel' }).addTo(map); });
+const P63_STYLE = [
+  { color: '#ffe14d', weight: 2.6, fill: false },
+  { color: '#ff8c1a', weight: 2, fillColor: '#ff8c1a', fillOpacity: 0.28 },
+  { color: '#0b5d33', weight: 1, fillColor: '#2bd17a', fillOpacity: 0.35 },
+  { color: '#4fd1ff', weight: 1.4, fill: false },
+  { color: '#ffffff', weight: 1.2, dashArray: '6 4', fill: false }
+];
+getJSON('data/p63.json').then(g => {
+  layers.p63 = L.geoJSON(g, { pane: 'vec', style: f => P63_STYLE[g.features.indexOf(f)] || P63_STYLE[0],
+    onEachFeature: (f, l) => l.bindPopup('<div class="pop"><h3>' + esc(f.properties.feature) + '</h3><p><b>' + f.properties.acres + ' ac.</b> ' + esc(f.properties.method) + '</p></div>') });
+  bindToggle('f-p63', 'p63');
+  document.getElementById('zoomP63').addEventListener('click', () => map.fitBounds(layers.p63.getLayers()[0].getBounds().pad(0.35)));
+});
+const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? '&ndash;' : (+v).toFixed(d);
+function popup(p) {
+  const rows = [
+    ['Stratum', '<span class="mono">' + esc(p.stratum) + '</span> ' + esc(p.stratum_label)],
+    ['Also falls in', 'Model ' + (p.model === 'A' ? 'B: ' + p.stratum_B : 'A: ' + p.stratum_A)],
+    ['Lat, lon', '<span class="mono">' + p.lat.toFixed(6) + ', ' + p.lon.toFixed(6) + '</span>'],
+    ['UTM 19N', '<span class="mono">' + p.utm19_e.toFixed(0) + ' E, ' + p.utm19_n.toFixed(0) + ' N</span>'],
+    ['Structure pct', fmt(p.losi_pct) + ' block, ' + fmt(p.losi_pct_in_landform) + ' within landform'],
+    ['Top height', fmt(p.top_h_m, 1) + ' m, ' + fmt(p.big_trees_ha) + ' big crowns/ha'],
+    ['Terrain', p.landform + ', slope ' + fmt(p.slope_deg, 1) + '&deg;, enclosure ' + fmt(p.enclosure_m, 1) + ' m, ' + fmt(p.elev_m, 0) + ' m elev'],
+    ['Canopy', (p.canopy === 'EVG' ? 'evergreen-dominant' : 'deciduous-dominant') + ' (leaf-off cover ' + fmt(p.ucc, 2) + ')'],
+    ['Nearest wall / trail', fmt(p.dist_wall_m) + ' m / ' + fmt(p.dist_trail_m) + ' m'],
+    ['Owner', esc(p.owner) + (p.access ? ' (access ' + esc(p.access) + ')' : '')],
+    ['Other model', p.nearest_other_model_pt + ' at ' + fmt(p.nearest_other_model_m) + ' m']
+  ];
+  return '<div class="pop"><h3>' + p.point_id + ' &middot; ' + (p.role === 'primary' ? 'primary' : 'backup #' + p.rank) + '</h3><table>' + rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('') + '</table>' + (p.flags ? '<div class="flags">' + esc(p.flags) + '</div>' : '') + '<p style="margin-top:6px"><button class="ghost" type="button" data-copy="' + p.lat.toFixed(6) + ', ' + p.lon.toFixed(6) + '">Copy lat, lon</button></p></div>';
+}
+map.on('popupopen', e => { const b = e.popup.getElement().querySelector('[data-copy]'); if (!b) return; b.addEventListener('click', async () => { try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'Copied'; } catch (err) { b.textContent = b.dataset.copy; } }); });
+getJSON('data/points.json').then(g => {
+  const mk = (filter) => L.geoJSON(g, { filter, pane: 'pts', pointToLayer: (f, ll) => {
+      const p = f.properties, c = p.model === 'A' ? '#e4412b' : '#1e6cf0', prim = p.role === 'primary';
+      return L.circleMarker(ll, { pane: 'pts', radius: prim ? 6.5 : 4.5, color: prim ? '#ffffff' : c, weight: prim ? 2 : 2.2, fillColor: prim ? c : '#ffffff', fillOpacity: 1 });
+    }, onEachFeature: (f, l) => { l.bindPopup(popup(f.properties), { maxWidth: 360 }); l.bindTooltip(f.properties.point_id, { direction: 'top', offset: [0, -6], className: 'ptlabel' }); } });
+  layers.ptA = mk(f => f.properties.model === 'A' && f.properties.role === 'primary');
+  layers.ptB = mk(f => f.properties.model === 'B' && f.properties.role === 'primary');
+  layers.bk = mk(f => f.properties.role === 'backup');
+  bindToggle('f-bk', 'bk'); bindToggle('f-ptB', 'ptB'); bindToggle('f-ptA', 'ptA');
+});
+function popupC(p) {
+  const rows = [
+    ['Stratum', '<span class="mono">' + esc(p.stratum) + '</span> ' + esc(p.stratum_label)],
+    ['Also falls in', 'Model A: ' + esc(p.stratum_A) + ', Model B: ' + esc(p.stratum_B)],
+    ['Lat, lon', '<span class="mono">' + p.lat.toFixed(6) + ', ' + p.lon.toFixed(6) + '</span>'],
+    ['UTM 19N', '<span class="mono">' + p.utm19_e.toFixed(0) + ' E, ' + p.utm19_n.toFixed(0) + ' N</span>'],
+    ['Structure pct', fmt(p.losi_pct) + ' block, ' + fmt(p.losi_pct_in_group) + ' within group'],
+    ['Top height', fmt(p.top_h_m, 1) + ' m, ' + fmt(p.big_trees_ha) + ' big crowns/ha'],
+    ['Terrain', esc(p.landform) + ', slope ' + fmt(p.slope_deg, 1) + '&deg;, ' + fmt(p.elev_m, 0) + ' m elev'],
+    ['Land use', 'nearest wall ' + fmt(p.dist_wall_m) + ' m; ' + fmt(p.pits_50m_ha) + ' pits/ha within 50 m' + (p.pit_pct_slope === null || p.pit_pct_slope === undefined ? '' : ' (' + fmt(p.pit_pct_slope) + 'th pct for its slope)')],
+    ['Owner', esc(p.owner) + (p.access ? ' (access ' + esc(p.access) + ')' : '')],
+    ['Nearest A/B point', esc(p.nearest_AB_pt) + ' at ' + fmt(p.nearest_AB_m) + ' m']
+  ];
+  return '<div class="pop"><h3>' + p.point_id + ' &middot; ' + (p.role === 'primary' ? 'primary' : 'backup #' + p.rank) + '</h3><table>' + rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('') + '</table>' + (p.flags ? '<div class="flags">' + esc(p.flags) + '</div>' : '') + '<p style="margin-top:6px"><button class="ghost" type="button" data-copy="' + p.lat.toFixed(6) + ', ' + p.lon.toFixed(6) + '">Copy lat, lon</button></p></div>';
+}
+getJSON('data/pointsC.json').then(g => {
+  const mk = (filter) => L.geoJSON(g, { filter, pane: 'pts', pointToLayer: (f, ll) => {
+      const prim = f.properties.role === 'primary';
+      return L.circleMarker(ll, { pane: 'pts', radius: prim ? 6.5 : 4.5, color: prim ? '#ffffff' : '#1d1d1d', weight: prim ? 2 : 2.2, fillColor: prim ? '#1d1d1d' : '#ffffff', fillOpacity: 1 });
+    }, onEachFeature: (f, l) => { l.bindPopup(popupC(f.properties), { maxWidth: 360 }); l.bindTooltip(f.properties.point_id, { direction: 'top', offset: [0, -6], className: 'ptlabel' }); } });
+  layers.ptC = mk(f => f.properties.role === 'primary');
+  layers.bkC = mk(f => f.properties.role === 'backup');
+  bindToggle('f-ptC', 'ptC'); bindToggle('f-bk', 'bkC');
+});
+const W05 = { high: { color: '#19d119', weight: 3.4, opacity: 0.95 }, medium: { color: '#7be37b', weight: 2.4, opacity: 0.9 }, low: { color: '#b9f2b0', weight: 1.6, opacity: 0.85, dashArray: '4 3' } };
+getJSON('data/walls05.json').then(g => { layers.w05 = L.geoJSON(g, { pane: 'vec', style: f => W05[f.properties.confidence] || W05.low,
+  onEachFeature: (f, l) => l.bindTooltip('Wall candidate &middot; ' + esc(f.properties.confidence) + ' confidence &middot; ' + fmt(f.properties.length_m) + ' m long, crest ' + fmt(f.properties.crest_m, 2) + ' m' + (f.properties.joins_mapped ? ' &middot; joins a mapped wall' : ''), { sticky: true }) }); bindToggle('f-w05', 'w05'); });
+const cv = L.canvas({ padding: 0.3 });
+getJSON('data/tipups.json').then(g => { layers.tip = L.geoJSON(g, { pane: 'vec', pointToLayer: (f, ll) => L.circleMarker(ll, { renderer: cv, pane: 'vec', radius: 3, weight: 0.8, color: '#ffffff', fillColor: f.properties.kind === 'pit' ? '#08306b' : '#a50f15', fillOpacity: 1 }),
+  onEachFeature: (f, l) => l.bindTooltip((f.properties.kind === 'pit' ? 'Pit ' + fmt(-f.properties.amp_m, 2) + ' m deep' : 'Mound ' + fmt(f.properties.amp_m, 2) + ' m high') + ' (half of a tip-up-style pair)') }); bindToggle('f-tip', 'tip'); });
+getJSON('data/hearths.json').then(g => { layers.hearth = L.geoJSON(g, { pane: 'pts', pointToLayer: (f, ll) => L.circleMarker(ll, { pane: 'pts', radius: 9, weight: 2.5, color: '#ff8c1a', dashArray: '3 3', fill: false }),
+  onEachFeature: (f, l) => l.bindTooltip('Hearth-like platform &middot; ' + esc(f.properties.note), { sticky: true }) }); bindToggle('f-hearth', 'hearth'); });
+</script>
+</body>
+</html>
