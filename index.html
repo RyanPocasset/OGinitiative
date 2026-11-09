@@ -221,20 +221,20 @@ map.attributionControl.setPrefix(false);
 map.attributionControl.addAttribution('Lidar USGS 3DEP &middot; imagery, land, walls RIGIS &middot; trails &copy; OpenStreetMap contributors');
 
 const bases = {
-  photo: L.imageOverlay('img/ortho2024.jpg', B, { pane: 'base' }),
-  hill: L.imageOverlay('img/hillshade.jpg', B, { pane: 'base' }),
-  micro: L.imageOverlay('img/microrelief05.jpg', B, { pane: 'base' })
+  photo: L.imageOverlay('ortho2024.jpg', B, { pane: 'base' }),
+  hill: L.imageOverlay('hillshade.jpg', B, { pane: 'base' }),
+  micro: L.imageOverlay('microrelief05.jpg', B, { pane: 'base' })
 };
 const ovs = {
-  C: L.imageOverlay('img/strataC.png', B, { pane: 'analysis', className: 'pix' }),
-  lu: L.imageOverlay('img/landuse.png', B, { pane: 'analysis', className: 'pix' }),
-  A: L.imageOverlay('img/strataA.png', B, { pane: 'analysis', className: 'pix' }),
-  B: L.imageOverlay('img/strataB.png', B, { pane: 'analysis', className: 'pix' }),
-  land: L.imageOverlay('img/landform.png', B, { pane: 'analysis', className: 'pix' }),
-  ct: L.imageOverlay('img/canopytype.png', B, { pane: 'analysis', className: 'pix' }),
-  losi: L.imageOverlay('img/losi.png', B, { pane: 'analysis', className: 'pix' }),
-  chm: L.imageOverlay('img/chm.png', B, { pane: 'analysis' }),
-  enc: L.imageOverlay('img/enclosure.png', B, { pane: 'analysis' })
+  C: L.imageOverlay('strataC.png', B, { pane: 'analysis', className: 'pix' }),
+  lu: L.imageOverlay('landuse.png', B, { pane: 'analysis', className: 'pix' }),
+  A: L.imageOverlay('strataA.png', B, { pane: 'analysis', className: 'pix' }),
+  B: L.imageOverlay('strataB.png', B, { pane: 'analysis', className: 'pix' }),
+  land: L.imageOverlay('landform.png', B, { pane: 'analysis', className: 'pix' }),
+  ct: L.imageOverlay('canopytype.png', B, { pane: 'analysis', className: 'pix' }),
+  losi: L.imageOverlay('losi.png', B, { pane: 'analysis', className: 'pix' }),
+  chm: L.imageOverlay('chm.png', B, { pane: 'analysis' }),
+  enc: L.imageOverlay('enclosure.png', B, { pane: 'analysis' })
 };
 let curBase = 'photo', curOv = 'C';
 bases.photo.addTo(map);
@@ -311,12 +311,12 @@ map.on('mousemove', e => { const [E, N] = toUTM(e.latlng.lat, e.latlng.lng); ro.
 const layers = {};
 const getJSON = p => fetch(p).then(r => { if (!r.ok) throw new Error(p + ' ' + r.status); return r.json(); });
 function bindToggle(id, key) { const cb = document.getElementById(id); const f = () => { if (!layers[key]) return; cb.checked ? layers[key].addTo(map) : map.removeLayer(layers[key]); }; cb.addEventListener('change', f); f(); }
-getJSON('data/water.json').then(g => { layers.water = L.geoJSON(g, { pane: 'vec', style: { color: '#3d7fb0', weight: 0.8, fillColor: '#8fbcdc', fillOpacity: 0.55 }, interactive: false }).addTo(map); });
-getJSON('data/conservation.json').then(g => { layers.cons = L.geoJSON(g, { pane: 'vec', style: { color: '#111', weight: 1.1, dashArray: '2 4', fill: false }, onEachFeature: (f, l) => l.bindTooltip(esc(f.properties.owner) + ' &middot; ' + esc(f.properties.unit) + ' &middot; ' + f.properties.acres + ' ac &middot; public access ' + esc(f.properties.access), { sticky: true }) }); bindToggle('f-cons', 'cons'); });
-getJSON('data/roads.json').then(g => { layers.roads = L.geoJSON(g, { pane: 'vec', style: { color: '#f4f1ea', weight: 3.2, opacity: 0.95 }, onEachFeature: (f, l) => f.properties.name && l.bindTooltip(esc(f.properties.name), { sticky: true }) }); bindToggle('f-roads', 'roads'); });
-getJSON('data/trails.json').then(g => { layers.trails = L.geoJSON(g, { pane: 'vec', style: { color: '#b3261e', weight: 1.8, dashArray: '5 3' }, onEachFeature: (f, l) => f.properties.name && l.bindTooltip(esc(f.properties.name), { sticky: true }) }); bindToggle('f-trails', 'trails'); });
-getJSON('data/stonewalls.json').then(g => { layers.walls = L.geoJSON(g, { pane: 'vec', style: { color: '#ffd84d', weight: 1.4, opacity: 0.95 }, interactive: false }); bindToggle('f-walls', 'walls'); });
-getJSON('data/stateline.json').then(g => { L.geoJSON(g, { pane: 'vec', style: { color: '#000', weight: 2, dashArray: '10 5 2 5' }, interactive: false }).bindTooltip('RI | CT', { permanent: true, direction: 'right', className: 'ptlabel' }).addTo(map); });
+getJSON('water.json').then(g => { layers.water = L.geoJSON(g, { pane: 'vec', style: { color: '#3d7fb0', weight: 0.8, fillColor: '#8fbcdc', fillOpacity: 0.55 }, interactive: false }).addTo(map); });
+getJSON('conservation.json').then(g => { layers.cons = L.geoJSON(g, { pane: 'vec', style: { color: '#111', weight: 1.1, dashArray: '2 4', fill: false }, onEachFeature: (f, l) => l.bindTooltip(esc(f.properties.owner) + ' &middot; ' + esc(f.properties.unit) + ' &middot; ' + f.properties.acres + ' ac &middot; public access ' + esc(f.properties.access), { sticky: true }) }); bindToggle('f-cons', 'cons'); });
+getJSON('roads.json').then(g => { layers.roads = L.geoJSON(g, { pane: 'vec', style: { color: '#f4f1ea', weight: 3.2, opacity: 0.95 }, onEachFeature: (f, l) => f.properties.name && l.bindTooltip(esc(f.properties.name), { sticky: true }) }); bindToggle('f-roads', 'roads'); });
+getJSON('trails.json').then(g => { layers.trails = L.geoJSON(g, { pane: 'vec', style: { color: '#b3261e', weight: 1.8, dashArray: '5 3' }, onEachFeature: (f, l) => f.properties.name && l.bindTooltip(esc(f.properties.name), { sticky: true }) }); bindToggle('f-trails', 'trails'); });
+getJSON('stonewalls.json').then(g => { layers.walls = L.geoJSON(g, { pane: 'vec', style: { color: '#ffd84d', weight: 1.4, opacity: 0.95 }, interactive: false }); bindToggle('f-walls', 'walls'); });
+getJSON('stateline.json').then(g => { L.geoJSON(g, { pane: 'vec', style: { color: '#000', weight: 2, dashArray: '10 5 2 5' }, interactive: false }).bindTooltip('RI | CT', { permanent: true, direction: 'right', className: 'ptlabel' }).addTo(map); });
 const P63_STYLE = [
   { color: '#ffe14d', weight: 2.6, fill: false },
   { color: '#ff8c1a', weight: 2, fillColor: '#ff8c1a', fillOpacity: 0.28 },
@@ -324,7 +324,7 @@ const P63_STYLE = [
   { color: '#4fd1ff', weight: 1.4, fill: false },
   { color: '#ffffff', weight: 1.2, dashArray: '6 4', fill: false }
 ];
-getJSON('data/p63.json').then(g => {
+getJSON('p63.json').then(g => {
   layers.p63 = L.geoJSON(g, { pane: 'vec', style: f => P63_STYLE[g.features.indexOf(f)] || P63_STYLE[0],
     onEachFeature: (f, l) => l.bindPopup('<div class="pop"><h3>' + esc(f.properties.feature) + '</h3><p><b>' + f.properties.acres + ' ac.</b> ' + esc(f.properties.method) + '</p></div>') });
   bindToggle('f-p63', 'p63');
@@ -349,7 +349,7 @@ function popup(p) {
   return '<div class="pop"><h3>' + p.point_id + ' &middot; ' + (p.role === 'primary' ? 'primary' : 'backup #' + p.rank) + '</h3><table>' + rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('') + '</table>' + (p.flags ? '<div class="flags">' + esc(p.flags) + '</div>' : '') + '<p style="margin-top:6px"><button class="ghost" type="button" data-copy="' + p.lat.toFixed(6) + ', ' + p.lon.toFixed(6) + '">Copy lat, lon</button></p></div>';
 }
 map.on('popupopen', e => { const b = e.popup.getElement().querySelector('[data-copy]'); if (!b) return; b.addEventListener('click', async () => { try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'Copied'; } catch (err) { b.textContent = b.dataset.copy; } }); });
-getJSON('data/points.json').then(g => {
+getJSON('points.json').then(g => {
   const mk = (filter) => L.geoJSON(g, { filter, pane: 'pts', pointToLayer: (f, ll) => {
       const p = f.properties, c = p.model === 'A' ? '#e4412b' : '#1e6cf0', prim = p.role === 'primary';
       return L.circleMarker(ll, { pane: 'pts', radius: prim ? 6.5 : 4.5, color: prim ? '#ffffff' : c, weight: prim ? 2 : 2.2, fillColor: prim ? c : '#ffffff', fillOpacity: 1 });
@@ -374,7 +374,7 @@ function popupC(p) {
   ];
   return '<div class="pop"><h3>' + p.point_id + ' &middot; ' + (p.role === 'primary' ? 'primary' : 'backup #' + p.rank) + '</h3><table>' + rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('') + '</table>' + (p.flags ? '<div class="flags">' + esc(p.flags) + '</div>' : '') + '<p style="margin-top:6px"><button class="ghost" type="button" data-copy="' + p.lat.toFixed(6) + ', ' + p.lon.toFixed(6) + '">Copy lat, lon</button></p></div>';
 }
-getJSON('data/pointsC.json').then(g => {
+getJSON('pointsC.json').then(g => {
   const mk = (filter) => L.geoJSON(g, { filter, pane: 'pts', pointToLayer: (f, ll) => {
       const prim = f.properties.role === 'primary';
       return L.circleMarker(ll, { pane: 'pts', radius: prim ? 6.5 : 4.5, color: prim ? '#ffffff' : '#1d1d1d', weight: prim ? 2 : 2.2, fillColor: prim ? '#1d1d1d' : '#ffffff', fillOpacity: 1 });
@@ -384,12 +384,12 @@ getJSON('data/pointsC.json').then(g => {
   bindToggle('f-ptC', 'ptC'); bindToggle('f-bk', 'bkC');
 });
 const W05 = { high: { color: '#19d119', weight: 3.4, opacity: 0.95 }, medium: { color: '#7be37b', weight: 2.4, opacity: 0.9 }, low: { color: '#b9f2b0', weight: 1.6, opacity: 0.85, dashArray: '4 3' } };
-getJSON('data/walls05.json').then(g => { layers.w05 = L.geoJSON(g, { pane: 'vec', style: f => W05[f.properties.confidence] || W05.low,
+getJSON('walls05.json').then(g => { layers.w05 = L.geoJSON(g, { pane: 'vec', style: f => W05[f.properties.confidence] || W05.low,
   onEachFeature: (f, l) => l.bindTooltip('Wall candidate &middot; ' + esc(f.properties.confidence) + ' confidence &middot; ' + fmt(f.properties.length_m) + ' m long, crest ' + fmt(f.properties.crest_m, 2) + ' m' + (f.properties.joins_mapped ? ' &middot; joins a mapped wall' : ''), { sticky: true }) }); bindToggle('f-w05', 'w05'); });
 const cv = L.canvas({ padding: 0.3 });
-getJSON('data/tipups.json').then(g => { layers.tip = L.geoJSON(g, { pane: 'vec', pointToLayer: (f, ll) => L.circleMarker(ll, { renderer: cv, pane: 'vec', radius: 3, weight: 0.8, color: '#ffffff', fillColor: f.properties.kind === 'pit' ? '#08306b' : '#a50f15', fillOpacity: 1 }),
+getJSON('tipups.json').then(g => { layers.tip = L.geoJSON(g, { pane: 'vec', pointToLayer: (f, ll) => L.circleMarker(ll, { renderer: cv, pane: 'vec', radius: 3, weight: 0.8, color: '#ffffff', fillColor: f.properties.kind === 'pit' ? '#08306b' : '#a50f15', fillOpacity: 1 }),
   onEachFeature: (f, l) => l.bindTooltip((f.properties.kind === 'pit' ? 'Pit ' + fmt(-f.properties.amp_m, 2) + ' m deep' : 'Mound ' + fmt(f.properties.amp_m, 2) + ' m high') + ' (half of a tip-up-style pair)') }); bindToggle('f-tip', 'tip'); });
-getJSON('data/hearths.json').then(g => { layers.hearth = L.geoJSON(g, { pane: 'pts', pointToLayer: (f, ll) => L.circleMarker(ll, { pane: 'pts', radius: 9, weight: 2.5, color: '#ff8c1a', dashArray: '3 3', fill: false }),
+getJSON('hearths.json').then(g => { layers.hearth = L.geoJSON(g, { pane: 'pts', pointToLayer: (f, ll) => L.circleMarker(ll, { pane: 'pts', radius: 9, weight: 2.5, color: '#ff8c1a', dashArray: '3 3', fill: false }),
   onEachFeature: (f, l) => l.bindTooltip('Hearth-like platform &middot; ' + esc(f.properties.note), { sticky: true }) }); bindToggle('f-hearth', 'hearth'); });
 </script>
 </body>
